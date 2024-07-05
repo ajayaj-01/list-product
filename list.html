@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venia Store</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <p class="mobile">
+            <i class="fa fa-bars"></i>
+        </p>
+        <h1>Venia</h1>
+        <button id="back-button" style="display:none;">&#8678;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Smart Gear</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </nav>
+        <span class="cart-icon">
+            🛒 <span class="cart-count">0</span>
+        </span>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="banner">
+                <div class="banner-name">
+                    <p>Men's</p>
+                    <p>Outwear</p>
+                    <img src="./icons/max-width_header.png" class="line">
+                </div>
+                <div class="banner-image-wrapper">
+                    <div class="banner-img"></div>
+                </div>
+            </div>
+            <div class="listing-page">
+                
+                <div class="categories desktop">
+                    <div class="categories-wrapper">
+                        <h4>Filters</h4>
+                        <hr>
+                        <h4>Categories</h4>
+                        <div id="categories"></div>
+                        <hr>
+                    </div>
+                    
+                </div>
+                <div class="categories popup hide">
+                    <div class="categories-wrapper">
+                        <div class="category-header">
+                            <h4>Filters</h4><span class="close">X</span>
+                        </div>
+                        <hr>
+                        <a>clear all</a>
+                        <hr>
+                        <h4>Categories</h4>
+                        <div id="categories"><input type="checkbox" id="men's clothing" name="category" value="men's clothing"><label for="men's clothing">men's clothing</label><br><input type="checkbox" id="jewelery" name="category" value="jewelery"><label for="jewelery">jewelery</label><br><input type="checkbox" id="electronics" name="category" value="electronics"><label for="electronics">electronics</label><br><input type="checkbox" id="women's clothing" name="category" value="women's clothing"><label for="women's clothing">women's clothing</label><br></div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="results-sort">
+                        <span id="results-count">0 results </span>
+                        <select id="sort-by">
+                            <option value="default">Sort by</option>
+                            <option value="asc">Price: Low to High</option>
+                            <option value="desc">Price: High to Low</option>
+                        </select>
+                    </div>
+                    <div class="results-sort mobile">
+                        <div>
+                            <i><img src="./icons/sliders.svg">
+                                <span>Filter Results</span>
+                            </i>
+                        </div>
+                        
+
+                        <div id="sort-by">
+                            <i>
+                                <img src="./icons/arrow-down.svg" alt="">
+                                <img src="./icons/arrow-up.svg" alt="">
+                            </i>
+                            <span>
+                                Sort By
+                            </span>
+                        </div>
+                        <div id="results-count">0 results </div>
+                    </div>
+                    <div class="products"></div>
+                    <button id="load-more">Load More</button>
+                </div>
+            </div>
+            <div id="product-detail" class="detail-page" style="display:none;"></div>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-row-one">
+            <div class="footer-column">
+                <h1>Account</h1>
+                <p>Sign In</p>
+                <a href="#">Register</a>
+                <p>Order Status</p>
+                <p>Returns</p>
+            </div>
+            <div class="footer-column">
+                <h1>About Us</h1>
+                <p>Our Story</p>
+                <p>Careers</p>
+            </div>
+            <div class="footer-column">
+                <h1>Help</h1>
+                <p>Contact Us</p>
+                <p>Careers</p>
+                <p>Privacy</p>
+            </div>
+            <div class="footer-column">
+                <h1>Follow us</h1>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable
+                </p>
+                <p class="media">
+                       <img src="./icons/facebook.png"/>
+                        <img src="./icons/twitter.png" />
+                        <img src="./icons/instagram.png" />
+                </p>
+            </div>
+            
+
+        </div>
+        
+        <div class="footer">
+            <h4>VENIA</h4>
+            <p>© Company Name Addresses, City, State ZIP</p>
+            <p><a href="#">Terms of Use </a><a href="#"> Privacy Policy</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
